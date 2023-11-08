@@ -1,0 +1,190 @@
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heart {
+  width: 64px;
+  height: 64px;
+  background-color: transparent;
+  border-radius: 50%;
+  animation: heartbeat 2s infinite;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.heart2 {
+  width: 64px;
+  height: 64px;
+  background-color: transparent;
+  border-radius: 50%;
+  animation: heartbeat2 2s infinite;
+}
+
+@keyframes heartbeat2 {
+  0% {
+    transform: scale(0.5);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.5);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+body {
+  background-color: black;
+}
+
+.circle-1 {
+  width: 350px;
+  height: 350px;
+  position: relative;
+  left: 3%;
+  top: 80%;
+  border-radius: 100%;
+  background-color: red;
+  box-shadow: 0px 0px 3px 1px red;
+}
+
+.circle-2 {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 28%;
+  top: 10%;
+  border-radius: 100%;
+  background-color: greenyellow;
+  box-shadow: 0px 0px 3px 1px greenyellow;
+}
+
+.circle-3 {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: 40%;
+  top: 10%;
+  border-radius: 100%;
+  background-color: crimson;
+  box-shadow: 0px 0px 3px 1px crimson;
+}
+
+.circle-4 {
+  width: 220px;
+  height: 220px;
+  position: absolute;
+  left: 48%;
+  top: 15%;
+  border-radius: 100%;
+  background-color: orange;
+  box-shadow: 0px 0px 3px 1px orange;
+}
+
+.circle-5 {
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  left: 70.6%;
+  top: 10%;
+  border-radius: 100%;
+  background-color: yellow;
+  box-shadow: 0px 0px 3px 1px yellow;
+}
+
+.container {
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.circle-1:hover {
+  animation: circle 1.2s ease-out;
+  box-shadow: 0px 0px 5px 1px red;
+  background-color: red;
+}
+
+.circle-2:hover {
+  animation: circle 1.2s ease-out;
+  box-shadow: 0px 0px 5px 1px greenyellow;
+  background-color: greenyellow;
+}
+
+.circle-3:hover {
+  animation: circle 1.2s ease-out;
+  box-shadow: 0px 0px 5px 1px crimson;
+  background-color: crimson;
+}
+
+.circle-4:hover {
+  animation: circle 1.2s ease-out;
+  box-shadow: 0px 0px 5px 1px orange;
+  background-color: orange;
+}
+
+.circle-5:hover {
+  animation: circle 1.2s ease-out;
+  box-shadow: 0px 0px 5px 1px yellow;
+  background-color: yellow;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+ 
+  font-weight: bold;
+}
+
+@keyframes circle {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: translateY(-130px);
+  }
+
+  50% {
+    transform: scaleY(0.94);
+  }
+
+  70% {
+    transform: translateY(-60px);
+  }
+
+  90% {
+    transform: scaleY(0.98);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
